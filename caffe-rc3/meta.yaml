@@ -1,0 +1,68 @@
+package:
+  name: caffe
+  version: rc3
+
+source:
+  fn: rc3.tar.gz
+  url: https://github.com/BVLC/caffe/archive/rc3.tar.gz 
+  md5:  
+  patches:
+    - FindvecLib.cmake.patch
+    - _caffe_cpp.patch
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - cmake
+    - boost
+    - protobuf
+    - glog
+    - gflags
+    - hdf5
+    - h5py
+    - leveldb
+    - lmdb
+    - opencv
+    - python
+    - cython
+    - numpy
+    - scipy
+    - scikit-image
+    - networkx 
+    - nose
+    - pandas
+    - python-dateutil
+    - python-gflags
+    - pyyaml
+    - pillow
+    - six
+
+  run:
+    - boost
+    - protobuf
+    - glog
+    - gflags
+    - hdf5
+    - h5py
+    - leveldb
+    - lmdb
+    - opencv
+    - python
+    - cython
+    - numpy
+    - scipy
+    - scikit-image
+    - networkx 
+    - nose
+    - pandas
+    - python-dateutil
+    - python-gflags
+    - pyyaml
+    - pillow
+    - six
+
+about:
+  home: http://github.org/BVLC/caffe
+  license:  BSD 2-clause
